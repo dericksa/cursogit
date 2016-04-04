@@ -1,0 +1,76 @@
+git init - inicializa repositório
+git --version - versão do git
+git status 
+
+git add "nomedoarquivo" - adiciona o arquivo 
+
+git commit -m "Comentário"
+
+git config --global user.name Derick
+git config --global user.email email@email.com
+
+git add *.c (add todos os terminados em .c)
+git add . (add tudo na pasta)
+
+________________________
+Alteração no arquivo:
+
+git add arquivo
+git commit -m "Comentário"
+_________________________
+
+git log - visualizar alterações
+git log --oneline - Apenas código e comentário
+
+git clone ../Git/.git
+.. - Subir uma pasta
+
+
+git config --bool core.bare true  //no repositório 1
+bare = Só funciona push para ele
+Não funciona mais nenhum outro comando
+
+git push -u origin master  no repositório 2
+
+
+Retirar bare = digita git init novamente
+
+
+bare só guarda as alterações, para conseguir os arquivos é necessário dar pull
+
+git init --bare cria um bare direto
+
+
+GITHUB
+______________________________
+
+git clone https://github.com/dericksa/cursogit.git
+// Cria pasta direto do github
+
+git push origin master  - Att no repositório do github
+
+git push -u origin master - Utiliza uma vez só
+-u Padroniza as informações para o comando, depoi só utiliza git push com as informações passadas no -u anterior
+
+git pull origin master - Puxa todas as mudanças do servidor (Caso não tenha tal mudança na pasta)
+
+
+botão commits github - Mostra todas as alterações no projeto
+
+
+git checkout "codigo do commit" - Volta ao estado em que estava o projeto naquele commit, modifica a pasta do git
+
+git checkout master - Retorna a última alteraçao
+
+git revert codigo do commit - Reverte a aquele commit (Não apaga da pasta)
+
+
+git blame nomedoarquivo - pode verificar quem modificou o arquivo e quais alterações fez
+
+Ao pegar o codigo do blame, digite git show codigo  commit, ele mostra detalhado 
+
+Branch - Ramo (Inicialmente trabalhamos no ramo master, é possível criar outro ramo para trabalhar em uma versão nova do software por ex)
+
+Merge - Junta um ramo a outro (Por exemplo, cria uma nova funcionalidade ao software, é possível dar um merge para o ramo principal)
+
+
